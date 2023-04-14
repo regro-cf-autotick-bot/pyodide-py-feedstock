@@ -1,5 +1,5 @@
 {% set name = "pyodide-py" %}
-{% set version = "0.22.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyodide-py-{{ version }}.tar.gz
-  sha256: b51e2b05ad6c1943e2a745be8d43948b50e83bb2beced4dc6c16bd41cd54b7d4
+  sha256: 62848c0838e1173eb7e86daa94e5772dd2c25bdd6bd31dc2fa4d089fa89872b1
 
 build:
   noarch: python
