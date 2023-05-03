@@ -1,11 +1,11 @@
-About pyodide-py
-================
+About pyodide-py-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyodide-py-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyodide/pyodide
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyodide-py-feedstock/blob/main/LICENSE.txt)
 
 Summary: "A Python package providing core interpreter functionality for Pyodide."
 
