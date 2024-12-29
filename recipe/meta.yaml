@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pyodide-py" %}
 {% set version = "0.22.0" %}
 
@@ -6,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyodide-py-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyodide-py-{{ version }}.tar.gz
   sha256: b51e2b05ad6c1943e2a745be8d43948b50e83bb2beced4dc6c16bd41cd54b7d4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -28,6 +29,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyodide/pyodide
